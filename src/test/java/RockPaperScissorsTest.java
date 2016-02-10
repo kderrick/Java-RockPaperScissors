@@ -15,9 +15,10 @@ public class RockPaperScissorsTest {
   String outcome = "Player 2 Wins";
   assertEquals(outcome, testRockPaperScissors.checkWinner("Rock", "Paper"));
   }
-  // @Test
-  // public void checkWinner_rockLosePaper_false() {
-  // RockPaperScissors testRockPaperScissors = new RockPaperScissors();
-  // assertEquals(false, testRockPaperScissors.checkWinner("Rock", "Rock"));
-  // }
+  @Test
+  public void checkWinner_rockTieRock_tie() {
+  RockPaperScissors testRockPaperScissors = new RockPaperScissors();
+  String outcome = "Tie Game";
+  assertEquals(outcome, testRockPaperScissors.checkWinner("Rock", "Rock"));
+  }
 }

@@ -11,11 +11,13 @@ public class RockPaperScissors {
   public static String checkWinner(String personOneChoice, String personTwoChoice) {
 
     String outcome = "";
-    if (personOneChoice == "Rock" && personTwoChoice == "Scissors"){
+    if (personOneChoice == "Rock" && personTwoChoice == "Scissors") {
       outcome = "Player 1 Wins";
-    } else {
+    } else if (personOneChoice == "Rock" && personTwoChoice == "Paper") {
       outcome = "Player 2 Wins";
-      }
+    } else {
+      outcome = "Tie Game";
+    }
       return outcome;
     }
 }
