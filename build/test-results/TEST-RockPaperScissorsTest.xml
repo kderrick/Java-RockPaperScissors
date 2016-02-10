@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RockPaperScissorsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-02-10T17:22:25" hostname="epicodus-66.local" time="0.001">
+<testsuite name="RockPaperScissorsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-02-10T18:14:00" hostname="epicodus-66.local" time="0.001">
   <properties/>
-  <testcase name="checkWinner_rockBeatsScissors_player1" classname="RockPaperScissorsTest" time="0.0"/>
-  <testcase name="checkWinner_rockTieRock_tie" classname="RockPaperScissorsTest" time="0.0"/>
-  <testcase name="checkWinner_rockLosePaper_player2" classname="RockPaperScissorsTest" time="0.0"/>
+  <testcase name="onePlayerGame_computerChoiceRandomNumberEqualsChoice_Choice" classname="RockPaperScissorsTest" time="0.001"/>
+  <testcase name="twoPlayerGame_rockLosePaper_player2" classname="RockPaperScissorsTest" time="0.0"/>
+  <testcase name="twoPlayerGame_rockTieRock_tie" classname="RockPaperScissorsTest" time="0.0"/>
+  <testcase name="twoPlayerGame_rockBeatsScissors_player1" classname="RockPaperScissorsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
