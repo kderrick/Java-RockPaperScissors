@@ -8,13 +8,14 @@ import static spark.Spark.*;
 public class RockPaperScissors {
   public static void main(String[] args) {}
 
-  public static Boolean checkWinner(String personOneChoice, String personTwoChoice) {
+  public static String checkWinner(String personOneChoice, String personTwoChoice) {
 
-    Boolean outcome = false;
+    String outcome = "";
     if (personOneChoice == "Rock" && personTwoChoice == "Scissors"){
-      outcome = true;
-    } else if ()
-
-    return outcome;
-  }
+      outcome = "Player 1 Wins";
+    } else {
+      outcome = "Player 2 Wins";
+      }
+      return outcome;
+    }
 }
