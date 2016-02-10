@@ -12,9 +12,9 @@ public class RockPaperScissors {
   public static String twoPlayerGame(String personOneChoice, String personTwoChoice) {
 
     String outcome = "";
-    if (personOneChoice == "Rock" && personTwoChoice == "Scissors" ||        personOneChoice == "Scissors" && personTwoChoice == "Paper" || personOneChoice == "Paper" && personTwoChoice == "Rock" ) {
+    if (personOneChoice.equals("Rock") && personTwoChoice.equals("Scissors") ||        personOneChoice.equals("Scissors") && personTwoChoice.equals("Paper") || personOneChoice.equals("Paper") && personTwoChoice.equals("Rock")) {
       outcome = "Player 1 Wins";
-    } else if (personOneChoice == "Rock" && personTwoChoice == "Paper" || personOneChoice == "Scissors" && personTwoChoice == "Rock" || personOneChoice == "Paper" && personTwoChoice == "Scissors") {
+    } else if (personOneChoice.equals("Rock") && personTwoChoice.equals("Paper") || personOneChoice.equals("Scissors") && personTwoChoice.equals("Rock") || personOneChoice.equals("Paper") && personTwoChoice.equals("Scissors")) {
       outcome = "Player 2 Wins";
     } else {
       outcome = "Tie Game";
@@ -22,12 +22,10 @@ public class RockPaperScissors {
       return outcome;
     }
 
-
-  public static String onePlayerGame() {
+  public static String computerOption() {
     Random computerRandom = new Random();
     Integer computerInteger = computerRandom.nextInt(3);
-    String computerChoice = "";
-    String outcome = "";
+    String computerChoice;
 
     if (computerInteger == 0) {
       computerChoice = "Rock";
@@ -37,16 +35,22 @@ public class RockPaperScissors {
       computerChoice = "Paper";
     }
 
-    return computerChoice;
+      return computerChoice;
+    }
 
-    // if (player == "Rock" && computerChoice == "Scissors" || player == "Scissors" && computerChoice == "Paper" || player == "Paper" && computerChoice == "Rock" ) {
-    //   outcome = "Player 1 Wins";
-    // } else if (player == "Rock" && computerChoice == "Paper" || player == "Scissors" && computerChoice == "Rock" || player == "Paper" && computerChoice == "Scissors") {
-    //   outcome = "Computer Wins";
-    // } else {
-    //   outcome = "Tie Game";
-    // }
-    //   return outcome;
+
+    public static String onePlayerGame(String player) {
+      String outcome = "";
+      String computerChoice = computerOption();
+      
+      if (player.equals("Rock") && computerChoice.equals("Scissors") || player.equals("Scissors") && computerChoice.equals("Paper") || player.equals("Paper") && computerChoice.equals("Rock") ) {
+        outcome = "Player 1 Wins";
+      } else if (player.equals("Rock") && computerChoice.equals("Paper") || player.equals("Scissors") && computerChoice.equals("Rock") || player.equals("Paper") && computerChoice.equals("Scissors")) {
+        outcome = "Computer Wins";
+      } else {
+        outcome = "Tie Game";
+      }
+      return outcome;
     }
 
   }
